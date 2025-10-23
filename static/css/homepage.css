@@ -1,0 +1,101 @@
+* {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.title{
+    margin-bottom: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    border: 1px solid black;
+    padding: 1.5rem;
+    border-radius: 16px;
+}
+
+form h1{
+    margin:0;
+}
+
+label[for="profile"]{
+    font-weight: 600;
+}
+
+.form-items{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-items label {
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.form-items input {
+    padding: 4px 8px 2px 0px;
+    font-size: 16px;
+    border:none;
+    border-bottom: 1px solid black;
+}
+
+.form-items input:focus{
+    outline: none;
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+#submit {
+    padding: 8px;
+    background-color: black;
+    color:white;
+    border: 1px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#submit:hover {
+    border:1px solid black;
+    background-color: white;
+    color: black;
+}
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;;
+}
+
+#profile {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+}
+
+/*container*/
+#profile li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.error {
+    padding: 8px;
+    background-color: lightcoral;
+    color: white;
+    border-radius: 4px;
+    font-size: 16px;
+}

@@ -1,0 +1,120 @@
+body {
+    padding:1rem;
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    background-color: #eaecea;
+    gap: 1em;
+    grid-template: 1fr 1fr/ 1fr 1fr
+}
+
+* {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    box-sizing: border-box;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+table,
+th,
+td {
+    /* border: 1px solid lightgray;
+    border-radius: 16px; */
+    padding: 8px;
+    border-collapse: collapse;
+}
+
+.dimension,
+.score {
+    border-right: 1px solid lightgray;
+    border-top: 1px solid lightgray;
+}
+
+.category {
+    border-left: 1px solid lightgray;
+    border-top: 1px solid lightgray;
+}
+
+.score,
+.category {
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 16px;
+}
+
+.chart{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 16px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;  
+}
+
+.chart > div{
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    padding: 1rem;
+    background-color: white;
+}
+
+.recommendations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    border-radius: 16px;
+    background-color: white;
+    width: 100%;
+    font-size: 1.2rem;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    overflow-y: auto;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    font-size: 1rem;
+    padding: 1rem 1rem 0 1rem;
+    border-radius: 16px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.title {
+    margin-top: 0;
+}
+
+@media (max-width:1200px) {
+    body {
+        display: block;
+        height: auto;
+        /* The following properties are for a flexbox approach if you prefer it */
+        /* display:flex;
+        flex-direction: column;
+        align-items: stretch; */
+    }
+    .info {
+        margin-top:1rem;
+    }
+    .recommendations {
+        margin-top:1rem;
+    }
+}

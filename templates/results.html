@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <link href="{{ url_for('static', filename='css/results.css')}}" rel="stylesheet">
+    <title>{{ title }}</title>
+</head>
+<body>
+    <div class="chart">
+        <h1>chart</h1>
+        {{ chart_html|safe }}
+    </div>
+    <div class="info">  
+    <h1 class="title">Score</h1>
+        <table>
+            <tr class="header">
+                <th class="th-dimension">Dimensi</th>
+                <th>Score</th>
+                <th class="th-category">Kategori</th>
+            </tr>
+            {% for i in range(0, 6) %}
+            <tr>
+                <td class="dimension">{{ result.dimensi[i] }}</td>
+                <td class="score">{{ result.score[i] }}</td>
+                <td class="category">{{ result.kategori[i] }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        <div class="maturity">
+        <p>Current Maturity Level: {{ maturity_level }}</p>
+        </div>
+    </div>
+    <div class="recommendations">
+        <h1>AI Recommendations</h1>
+        {{ response|safe }}
+    </div>
+</body>
+</html>
