@@ -7,8 +7,8 @@
 ```bash
 pip -m venv venv
 ```
-3.Activate virtual environment
-Mac
+3.Activate virtual environment <br />
+Mac/Linux
 ```bash
 source venv/bin/activate
 ```
