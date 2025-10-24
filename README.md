@@ -21,10 +21,10 @@ venv\Scripts\activate
 ```bash
 pip install -r requirements.txt
 ```
-5.Get app password for smtp
-https://myaccount.google.com/u/0/apppasswords
-6.Get AI API key
-https://aistudio.google.com/api-keys
+5.Get app password for smtp<br />
+https://myaccount.google.com/u/0/apppasswords<br />
+6.Get AI API key<br />
+https://aistudio.google.com/api-keys<br />
 7.Make ".env" file
 ```bash
 EMAIL = 'youremailhere@here.com'
