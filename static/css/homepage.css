@@ -10,9 +10,11 @@ body {
     align-items: center;
     flex-direction: column;
     height: 100vh;
+    margin: 0;
 }
 
 .title{
+    margin-top: 0;
     margin-bottom: 2rem;
 }
 
@@ -98,4 +100,5 @@ label[for="profile"]{
     color: white;
     border-radius: 4px;
     font-size: 16px;
+    max-width: 360px;
 }
